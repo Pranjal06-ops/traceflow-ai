@@ -1,0 +1,103 @@
+{
+  "incidents_evaluated": 5,
+  "root_cause_accuracy": 0.8,
+  "avg_latency_ms": 18.9,
+  "avg_evidence_items_per_incident": 4.2,
+  "results": [
+    {
+      "incident_id": "INC-2026-0018",
+      "pipeline_id": "pl-sales-load",
+      "known_label": "upstream_timeout",
+      "top_candidate_key": "upstream_timeout",
+      "confidence": 0.55,
+      "evidence_count": 4,
+      "tools_used": [
+        "data_quality_tool",
+        "git_change_tool",
+        "historical_incident_tool",
+        "log_search_tool",
+        "schema_diff_tool",
+        "sql_investigation_tool",
+        "validation_tool"
+      ],
+      "latency_ms": 24.9,
+      "correct": true
+    },
+    {
+      "incident_id": "INC-2026-0019",
+      "pipeline_id": "pl-support-metrics",
+      "known_label": "duplicate_records",
+      "top_candidate_key": "duplicate_records",
+      "confidence": 0.4,
+      "evidence_count": 3,
+      "tools_used": [
+        "data_quality_tool",
+        "git_change_tool",
+        "historical_incident_tool",
+        "log_search_tool",
+        "schema_diff_tool",
+        "sql_investigation_tool",
+        "validation_tool"
+      ],
+      "latency_ms": 19.9,
+      "correct": true
+    },
+    {
+      "incident_id": "INC-2026-0020",
+      "pipeline_id": "pl-product-usage",
+      "known_label": "missing_partition",
+      "top_candidate_key": null,
+      "confidence": 0.0,
+      "evidence_count": 3,
+      "tools_used": [
+        "data_quality_tool",
+        "git_change_tool",
+        "historical_incident_tool",
+        "log_search_tool",
+        "schema_diff_tool",
+        "sql_investigation_tool",
+        "validation_tool"
+      ],
+      "latency_ms": 16.1,
+      "correct": false
+    },
+    {
+      "incident_id": "INC-2026-0021",
+      "pipeline_id": "pl-finance-reporting",
+      "known_label": "malformed_source_data",
+      "top_candidate_key": "malformed_source_data",
+      "confidence": 0.4,
+      "evidence_count": 3,
+      "tools_used": [
+        "data_quality_tool",
+        "git_change_tool",
+        "historical_incident_tool",
+        "log_search_tool",
+        "schema_diff_tool",
+        "sql_investigation_tool",
+        "validation_tool"
+      ],
+      "latency_ms": 15.9,
+      "correct": true
+    },
+    {
+      "incident_id": "INC-2026-0017",
+      "pipeline_id": "pl-customer-ingest",
+      "known_label": "upstream_representation_change_type_mismatch",
+      "top_candidate_key": "schema_type_change::customer_segment",
+      "confidence": 0.95,
+      "evidence_count": 8,
+      "tools_used": [
+        "data_quality_tool",
+        "git_change_tool",
+        "historical_incident_tool",
+        "log_search_tool",
+        "schema_diff_tool",
+        "sql_investigation_tool",
+        "validation_tool"
+      ],
+      "latency_ms": 17.5,
+      "correct": true
+    }
+  ]
+}
